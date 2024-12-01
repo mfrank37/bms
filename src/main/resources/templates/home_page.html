@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="static/styles.css">
+  <title>Document</title>
+</head>
+<body class="layout">
+  <nav>
+    <ul>
+      <li class="active">Home</li>
+      <li>Transfer</li>
+      <li>Account</li>
+      <li>Cards</li>
+      <li>Profile</li>
+      <li>Apply For Card</li>
+      <li>Logout</li>
+    </ul>
+  </nav>
+  <main>
+    <header>
+      Today: 
+    </header>
+    <hr />
+    <div class="contents">
+      <div class="title">
+        Kota Bank
+      </div>
+      <form>
+        <div class="inputs">
+          <label for="acc">Enter Account Number</label>
+          <input id="acc" type="text" name="accountNumber" />
+          <label for="amt">Enter Amount</label>
+          <input id="amt" type="number" name="amount" />
+        </div>
+        <button type="submit">Deposit Amount</button>
+      </form>
+    </div>
+  </main>
+</body>
+<style>
+  header {
+    padding: 24px 0 24px 32px;
+  }
+
+  .title, label {
+    color: white;
+  }
+  
+  .title {
+    padding: 12px;
+    background-color: var(--dark-blue);
+  }
+
+  form {
+    background-color: darkcyan;
+    padding: 64px;
+    display: flex;
+    gap: 12px;
+  }
+
+  form button {
+    text-align: center;
+    width: 150px;
+    align-self: end;
+    cursor: pointer;
+  }
+
+  form .inputs {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .inputs input {
+    padding: 4px;
+    width: 240px;
+  }
+</style>
+</html>
